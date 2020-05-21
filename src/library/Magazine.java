@@ -1,9 +1,17 @@
 package library;
 
-public abstract class Magazine extends Periodical {
+public class Magazine extends Periodical {
 
-	public Magazine() {
-		// TODO Auto-generated constructor stub
+	String theme,frequency;
+	int issueNum;
+	
+	public Magazine(int numPages, int pubDate, String name, String genre, String theme, String frequency, int issueNum) {
+
+		super(numPages,pubDate,name,genre);
+		this.theme = theme;
+		this.frequency = frequency;
+		this.issueNum = issueNum;
+	
 	}
 
 }

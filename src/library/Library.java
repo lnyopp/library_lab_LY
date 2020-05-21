@@ -4,7 +4,13 @@ public class Library {
 
 	public static void main(String[] args) {
 	
-		System.out.print("Main Class");
+		CardHolder ch = new CardHolder(18,false,true);
+		
+		System.out.println(ch.canCheckOut());
+		
+		
+		
+		
 
 	}
 
