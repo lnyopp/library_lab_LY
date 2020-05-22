@@ -3,9 +3,9 @@ package library;
 
 public class Periodical extends LibraryItems {
 
-	public Periodical(int numPages, int pubDate, String name, String genre) {
+	public Periodical(Author author,int numPages, int pubDate,int numCopies, int numLoaned,String name, String genre) {
 		
-		super(numPages,pubDate,name,genre);
+		super(author,numPages,pubDate,numCopies,numLoaned,name,genre);
 		
 	}
 		

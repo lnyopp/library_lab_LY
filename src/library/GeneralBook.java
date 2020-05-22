@@ -5,13 +5,12 @@ public class GeneralBook extends Book {
 	private boolean avaliable;
 	private boolean top100;
 	
-	public GeneralBook(String author, int numPages,int pubDate,String name, String genre,boolean avaliable,boolean top100) {
+	public GeneralBook(Author author,int numPages, int pubDate,int numCopies, int numLoaned,String name, String genre,boolean avaliable,boolean top100) {
 		
-		super(author,numPages,pubDate,name,genre);
+		super(author,numPages,pubDate,numCopies,numLoaned,name,genre);
 		this.avaliable = avaliable;
 		this.top100 = top100;
-	
-		
+			
 	}
 
 	public boolean isAvaliable() {
